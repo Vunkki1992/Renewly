@@ -8,22 +8,25 @@ export default function TabsLayout() {
   if (!session) return <Redirect href="/(auth)/login" />;
 
   return (
-    <NativeTabs>
+    <NativeTabs
+      tabBarActiveTintColor="#FF6B5C"
+      tabBarInactiveTintColor="#9CA3AF"
+    >
       <NativeTabs.Trigger name="index">
-        <Icon sf="chart.pie.fill" />
-        <Label>Overview</Label>
+        <Icon sf="house.fill" />
+        <Label>Home</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="subscriptions">
-        <Icon sf="list.bullet.rectangle.portrait" />
-        <Label>Subscriptions</Label>
+        <Icon sf="creditcard.fill" />
+        <Label>Fees</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="add">
-        <Icon sf="plus.circle.fill" />
-        <Label>Add</Label>
+        <Icon sf="chart.bar.fill" />
+        <Label>Insights</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <Icon sf="gearshape.fill" />
-        <Label>Settings</Label>
+        <Icon sf="person.fill" />
+        <Label>Profile</Label>
       </NativeTabs.Trigger>
     </NativeTabs>
   );
