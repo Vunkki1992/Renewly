@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Renewly",
-    "slug": "renewly",
-    "scheme": "renewly",
+    "name": "SubPulse",
+    "slug": "subpulse",
+    "scheme": "subpulse",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,7 +26,16 @@
       "expo-router",
       "expo-status-bar",
       "expo-secure-store",
-      "expo-image"
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SubPulse to access your photos to upload invoices.",
+          "cameraPermission": "Allow SubPulse to access your camera to scan invoices.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-document-picker"
     ]
   }
 }
